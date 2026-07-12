@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+This is a [Next.js](https://nextjs.org) project configured for GitHub Pages static deployment.
 
 ## Getting Started
 
@@ -29,8 +29,11 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Deploy on GitHub Pages
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Create a repository named `JachynHome.github.io` under your GitHub account.
+2. Push this project to the `main` branch.
+3. In GitHub, open your repository settings and enable GitHub Pages from the `GitHub Actions` source.
+4. Every push to `main` will build and publish the site automatically.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+If you use a different repository name, GitHub Pages still works, but the repository must be set up as a project page and may need a `basePath`.
