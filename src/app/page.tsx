@@ -48,7 +48,7 @@ export default function Home() {
 
             <div className="space-y-5">
               <h1 className="max-w-3xl text-4xl font-semibold leading-tight tracking-tight text-white sm:text-6xl">
-                欢迎来到我的主页。
+                欢迎来到Jachyn的主页。
               </h1>
               <p className="max-w-2xl text-base leading-8 text-slate-300 sm:text-lg">
                 这个首页有关于我、项目、能力和联系方式。
