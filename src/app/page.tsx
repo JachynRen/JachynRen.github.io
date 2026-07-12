@@ -23,7 +23,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="relative flex min-h-screen flex-col overflow-hidden">
+    <div id="home" className="relative flex min-h-screen flex-col overflow-hidden">
       <main className="mx-auto flex w-full max-w-6xl flex-1 flex-col px-5 py-8 sm:px-8 lg:px-10">
         <header className="flex items-center justify-between rounded-full border border-white/10 bg-white/5 px-5 py-3 backdrop-blur-xl">
           <div>
@@ -96,7 +96,17 @@ export default function Home() {
                 </div>
               </div>
 
-              github链接：https://github.com/JachynHome
+              <div className="mt-6 space-y-3 text-sm text-slate-300">
+                <p>GitHub 链接：</p>
+                <a
+                  href="https://github.com/JachynHome"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center rounded-full border border-white/15 bg-white/5 px-4 py-2 text-cyan-200 transition hover:border-cyan-300/40 hover:bg-white/10"
+                >
+                  github.com/JachynHome
+                </a>
+              </div>
 
      
             </div>
@@ -196,7 +206,7 @@ export default function Home() {
             </p> */}
             <div className="mt-6 flex flex-col gap-4 sm:flex-row">
               <a
-                href="mailto:hello@example.com"
+                href="mailto:jachyn@foxmail.com"
                 className="inline-flex items-center justify-center rounded-full bg-cyan-300 px-6 py-3 text-sm font-semibold text-slate-950 transition hover:bg-cyan-200"
               >
                 jachyn@foxmail.com
