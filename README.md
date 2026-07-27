@@ -2,7 +2,15 @@ This is a [Next.js](https://nextjs.org) project configured for GitHub Pages stat
 
 ## Getting Started
 
-First, run the development server:
+> ⚠️  **克隆项目后，请先安装依赖**
+>
+> `node_modules` 被 `.gitignore` 忽略，不会随 Git 下载，因此克隆后必须先执行：
+>
+> ```bash
+> npm install
+> ```
+
+### 启动开发服务器
 
 ```bash
 npm run dev
