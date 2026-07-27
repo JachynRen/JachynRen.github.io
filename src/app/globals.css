@@ -32,30 +32,68 @@ body {
   font-family: var(--font-geist-sans), sans-serif;
   min-height: 100vh;
   position: relative;
+  overflow-x: hidden;
   background-image:
     radial-gradient(circle at top left, rgba(56, 189, 248, 0.22), transparent 30%),
-    radial-gradient(circle at 85% 20%, rgba(125, 211, 252, 0.16), transparent 24%);
+    radial-gradient(circle at 85% 20%, rgba(125, 211, 252, 0.16), transparent 24%),
+    linear-gradient(180deg, #08101f 0%, #0b1020 48%, #070b16 100%);
 }
 
-body::before {
+/* Floating particles */
+body::before,
+body::after {
   content: "";
   position: fixed;
   inset: 0;
   z-index: -1;
-  background: linear-gradient(180deg, #08101f, #0b1020, #1a0a2e, #0b1020, #08101f);
-  background-size: 100% 400%;
-  animation: gradientFlow 12s ease-in-out infinite;
+  pointer-events: none;
 }
 
-@keyframes gradientFlow {
+body::before {
+  background-image:
+    radial-gradient(2px 2px at 10% 20%, rgba(125, 211, 252, 0.6), transparent),
+    radial-gradient(2px 2px at 25% 55%, rgba(125, 211, 252, 0.5), transparent),
+    radial-gradient(3px 3px at 40% 10%, rgba(56, 189, 248, 0.7), transparent),
+    radial-gradient(2px 2px at 55% 70%, rgba(125, 211, 252, 0.4), transparent),
+    radial-gradient(2px 2px at 70% 40%, rgba(56, 189, 248, 0.6), transparent),
+    radial-gradient(3px 3px at 85% 15%, rgba(125, 211, 252, 0.5), transparent),
+    radial-gradient(2px 2px at 15% 80%, rgba(56, 189, 248, 0.4), transparent),
+    radial-gradient(2px 2px at 60% 90%, rgba(125, 211, 252, 0.5), transparent),
+    radial-gradient(3px 3px at 90% 60%, rgba(56, 189, 248, 0.6), transparent),
+    radial-gradient(2px 2px at 35% 45%, rgba(125, 211, 252, 0.3), transparent),
+    radial-gradient(2px 2px at 5% 50%, rgba(56, 189, 248, 0.5), transparent),
+    radial-gradient(3px 3px at 75% 80%, rgba(125, 211, 252, 0.4), transparent);
+  background-size: 200% 200%;
+  animation: particleDrift 20s ease-in-out infinite;
+}
+
+body::after {
+  background-image:
+    radial-gradient(1px 1px at 20% 30%, rgba(125, 211, 252, 0.5), transparent),
+    radial-gradient(1px 1px at 50% 15%, rgba(56, 189, 248, 0.4), transparent),
+    radial-gradient(2px 2px at 80% 50%, rgba(125, 211, 252, 0.3), transparent),
+    radial-gradient(1px 1px at 45% 85%, rgba(56, 189, 248, 0.5), transparent),
+    radial-gradient(1px 1px at 65% 25%, rgba(125, 211, 252, 0.4), transparent),
+    radial-gradient(2px 2px at 30% 75%, rgba(56, 189, 248, 0.3), transparent);
+  background-size: 200% 200%;
+  animation: particleDrift 25s ease-in-out infinite reverse;
+}
+
+@keyframes particleDrift {
   0% {
-    background-position: 50% 0%;
+    background-position: 0% 0%;
+  }
+  25% {
+    background-position: 50% 30%;
   }
   50% {
-    background-position: 50% 100%;
+    background-position: 100% 50%;
+  }
+  75% {
+    background-position: 30% 70%;
   }
   100% {
-    background-position: 50% 0%;
+    background-position: 0% 0%;
   }
 }
 
