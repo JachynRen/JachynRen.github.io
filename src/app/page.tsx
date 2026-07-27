@@ -87,7 +87,7 @@ export default function Home() {
           <aside className="rounded-[2rem] border border-white/10 bg-[var(--surface)] p-6 shadow-2xl shadow-cyan-950/20 backdrop-blur-2xl">
             <div className="rounded-[1.5rem] border border-white/10 bg-[var(--surface-strong)] p-6">
               <div className="flex items-center gap-4">
-                <div className="flex h-21 w-21 items-center justify-center rounded-2xl bg-gradient-to-br from-cyan-300 to-sky-500 text-2xl font-bold text-slate-950">
+                <div className="flex h-20 w-20 items-center justify-center rounded-2xl bg-gradient-to-br from-cyan-300 to-sky-500 text-2xl font-bold text-slate-950">
                   Jachyn
                 </div>
                 <div>
