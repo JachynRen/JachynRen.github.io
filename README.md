@@ -31,7 +31,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## Deploy on GitHub Pages
 
-1. Create a repository named `JachynHome.github.io` under your GitHub account.
+1. Create a repository named `JachynRen.github.io` under your GitHub account.
 2. Push this project to the `main` branch.
 3. In GitHub, open your repository settings and enable GitHub Pages from the `GitHub Actions` source.
 4. Every push to `main` will build and publish the site automatically.
