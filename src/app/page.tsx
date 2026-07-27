@@ -1,3 +1,8 @@
+
+"use client";
+
+import React from "react";
+
 export default function Home() {
   const projects = [
     {
@@ -24,6 +29,16 @@ export default function Home() {
 
   return (
     <div id="home" className="relative flex min-h-screen flex-col overflow-hidden">
+      <div id="particles">
+        <span style={{"--duration": "14s", "--delay": "0s", "--dx1": "40px", "--dy1": "-30px", "--dx2": "-30px", "--dy2": "40px", "--dx3": "35px", "--dy3": "-20px", width: "8px", height: "8px", top: "15%", left: "10%"} as React.CSSProperties} />
+        <span style={{"--duration": "18s", "--delay": "2s", "--dx1": "-25px", "--dy1": "35px", "--dx2": "40px", "--dy2": "-25px", "--dx3": "-30px", "--dy3": "30px", width: "12px", height: "12px", top: "70%", left: "85%"} as React.CSSProperties} />
+        <span style={{"--duration": "12s", "--delay": "4s", "--dx1": "30px", "--dy1": "-20px", "--dx2": "-25px", "--dy2": "35px", "--dx3": "40px", "--dy3": "-15px", width: "6px", height: "6px", top: "30%", left: "75%"} as React.CSSProperties} />
+        <span style={{"--duration": "20s", "--delay": "1s", "--dx1": "-35px", "--dy1": "25px", "--dx2": "30px", "--dy2": "-40px", "--dx3": "-20px", "--dy3": "35px", width: "10px", height: "10px", top: "85%", left: "20%"} as React.CSSProperties} />
+        <span style={{"--duration": "16s", "--delay": "3s", "--dx1": "25px", "--dy1": "-35px", "--dx2": "-40px", "--dy2": "20px", "--dx3": "30px", "--dy3": "-25px", width: "7px", height: "7px", top: "45%", left: "50%"} as React.CSSProperties} />
+        <span style={{"--duration": "22s", "--delay": "5s", "--dx1": "-20px", "--dy1": "30px", "--dx2": "35px", "--dy2": "-20px", "--dx3": "-35px", "--dy3": "40px", width: "14px", height: "14px", top: "10%", left: "60%"} as React.CSSProperties} />
+        <span style={{"--duration": "15s", "--delay": "1.5s", "--dx1": "35px", "--dy1": "-25px", "--dx2": "-30px", "--dy2": "30px", "--dx3": "25px", "--dy3": "-35px", width: "5px", height: "5px", top: "60%", left: "35%"} as React.CSSProperties} />
+        <span style={{"--duration": "19s", "--delay": "3.5s", "--dx1": "-30px", "--dy1": "20px", "--dx2": "25px", "--dy2": "-35px", "--dx3": "-40px", "--dy3": "25px", width: "9px", height: "9px", top: "90%", left: "70%"} as React.CSSProperties} />
+      </div>
       <main className="mx-auto flex w-full max-w-6xl flex-1 flex-col px-5 py-8 sm:px-8 lg:px-10">
         <header className="flex items-center justify-between rounded-full border border-white/10 bg-white/5 px-5 py-3 backdrop-blur-xl">
           <div>
