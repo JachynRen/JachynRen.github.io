@@ -99,12 +99,12 @@ export default function Home() {
               <div className="mt-6 space-y-3 text-sm text-slate-300">
                 <p>GitHub 链接：</p>
                 <a
-                  href="https://github.com/JachynHome"
+                  href="https://github.com/JachynRen"
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex items-center rounded-full border border-white/15 bg-white/5 px-4 py-2 text-cyan-200 transition hover:border-cyan-300/40 hover:bg-white/10"
                 >
-                  github.com/JachynHome
+                  github.com/JachynRen
                 </a>
               </div>
 
