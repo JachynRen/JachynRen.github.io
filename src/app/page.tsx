@@ -140,7 +140,7 @@ export default function Home() {
             <div className="mt-4 grid gap-4 lg:grid-cols-2">
               <article className="rounded-2xl border border-white/10 bg-white/5 p-5">
                 <h3 className="text-lg font-semibold text-white">中国科学院大学</h3>
-                <p className="mt-2 text-sm text-slate-300">2025.09 - 2027.06 | 工程科学学院 | 信息系统（工程管理） | GPA: 3.69</p>
+                <p className="mt-2 text-sm text-slate-300">2025.09 - 2027.06 | 工程科学学院 | （信息系统）工程管理 | GPA: 3.69</p>
                 <p className="mt-4 text-sm font-medium text-cyan-200/80">主修课程</p>
                 <p className="mt-2 text-sm leading-7 text-slate-300">
                   定量分析：模型与方法、科学研究中的机器学习方法、深度学习、工程系统建模与仿真、云计算、工程经济学、项目计划与控制。
